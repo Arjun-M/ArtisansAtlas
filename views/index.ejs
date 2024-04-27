@@ -1,0 +1,13 @@
+<html>
+  <head> 
+    <%- include('components/header.ejs'); -%> 
+    <script src="./js/script.js"></script>
+  </head>
+
+  <body>
+    <%- include('components/body.ejs' , { blogs:blogs , featured: featured , newarrivals:newarrivals , trending:trending }); -%>
+    <%- include('components/featured.ejs'); -%>
+  </body>
+
+  <footer><%- include('components/footer.ejs'); -%></footer>
+</html>

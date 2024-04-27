@@ -1,0 +1,67 @@
+<div class="product-showcase">
+    <h2 class="title">New Arrivals</h2>
+    <div class="showcase-wrapper has-scrollbar">
+        <% for(var j=0; j < newarrivals.length; j++) { %>
+        <div class="showcase-container">
+            <% for(var i=0; i < newarrivals[j].length; i++) { %>
+                <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                        <img src="<%= newarrivals[j][i].photo %>" alt="relaxed short full sleeve t-shirt" width="70"
+                            class="showcase-img" />
+                    </a>
+    
+                    <div class="showcase-content">
+                        <a href="#">
+                            <h4 class="showcase-title">
+                                <%= newarrivals[j][i].name %>
+                            </h4>
+                        </a>
+    
+                        <a href="#" class="showcase-category"><%= newarrivals[j][i].cat %></a>
+    
+                        <div class="price-box">
+                            <p class="price">₹ <%= newarrivals[j][i].price %></p>
+                            <del>₹ <%= newarrivals[j][i].orgprice %></del>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+</div>  
+        
+
+<div class="product-showcase">
+    <h2 class="title">Trending</h2>
+    <div class="showcase-wrapper has-scrollbar">
+        <% for(var j=0; j < trending.length; j++) { %>
+        <div class="showcase-container">
+            <% for(var i=0; i < trending[j].length; i++) { %>
+                <div class="showcase">
+                    <a href="#" class="showcase-img-box">
+                        <img src="<%= trending[j][i].photo %>" alt="relaxed short full sleeve t-shirt" width="70"
+                            class="showcase-img" />
+                    </a>
+    
+                    <div class="showcase-content">
+                        <a href="#">
+                            <h4 class="showcase-title">
+                                <%= trending[j][i].name %>
+                            </h4>
+                        </a>
+    
+                        <a href="#" class="showcase-category"><%= trending[j][i].cat %></a>
+    
+                        <div class="price-box">
+                            <p class="price">₹ <%= trending[j][i].price %></p>
+                            <del>₹ <%= trending[j][i].orgprice %></del>
+                        </div>
+                    </div>
+                </div>
+            <% } %>
+        </div>
+        <% } %>
+    </div>
+</div>
+
